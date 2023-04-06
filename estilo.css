@@ -1,4 +1,4 @@
-:root{
+:root {
     --cor-primaria: #1B4436;
     --cor-secundaria: #50AA5A;
     --cor-terciaria: #FFFFFF;
@@ -7,24 +7,48 @@
 .box {
     display: flex;
     justify-content: center;
-    gap: 50px;
-
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;    
 }
-.box-imagem{
+
+.box-imagem {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    border: 1px solid var(--cor-secundaria);
+    border-radius: 20px;
 }
 
-.box img{
-    border: 1px solid #50AA5A;
+.box img {
+    border: 1px solid var(--cor-secundaria);
     border-radius: 20px 20px 0px 0px;
 
 }
+
 .box-imagem p {
     font-family: 'Quicksand';
-    width: 390px;
-    margin-top: 10px;
+    max-width: 387px;
+    margin-top: 0;
     font-size: 1em;
+}
+
+.botao {
+    height: 44px;
+    width: 389px;
+    background: #50AA5A;
+    border-radius: 0px 0px 20px 20px;
+    border: 1px solid var(--cor-secundaria);
+}
+
+.botao p {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 38px;
+
+    color: #FFFFFF;
+
 }
